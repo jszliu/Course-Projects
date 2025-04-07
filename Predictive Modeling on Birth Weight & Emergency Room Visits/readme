@@ -1,1 +1,59 @@
+This repository presents two statistical modeling problems focused on real-world health-related datasets for Categorical Data Analysis Final Project:
 
+🔹 Problem 1 – Predicting Low Birth Weight
+We aim to build a model that predicts whether an infant will be born with low birth weight using maternal and medical data.
+
+Dataset: 189 observations with features such as mother's age, weight, smoking status, hypertension, premature labor history, and prenatal visits.
+
+Method: Logistic Regression
+
+Model Selection: Stepwise AIC and BIC-based feature selection
+
+Final Model: Selected via AIC, includes interaction terms and significant medical predictors
+
+Accuracy: 74.6%
+
+🔹 Problem 2 – Modeling ER Visits for Heart Disease Patients
+This problem involves predicting the number of emergency room visits by heart disease patients using insurance and health claim data.
+
+Dataset: 788 observations with predictors like treatment cost, age, gender, drugs prescribed, and complications
+
+Method: Poisson Regression
+
+Approach:
+
+Compared untransformed and square-root transformed models
+
+Included interaction terms with gender
+
+Model Selection: Stepwise AIC
+
+Final Model: Untransformed predictors with significant coefficients
+
+Note: The goodness-of-fit test suggested the model may not fully capture underlying complexity
+
+🧪 Techniques Used
+Logistic & Poisson Regression (GLM)
+
+Stepwise Model Selection (AIC/BIC)
+
+Model Diagnostics:
+
+Hosmer-Lemeshow Test
+
+Residual Analysis (Pearson & Deviance)
+
+ROC Curve and Confusion Matrix
+
+Feature Engineering (interaction and transformation)
+
+Data cleaning in R
+
+Visualization: diagnostic plots, ROC
+
+🧰 Tools & Packages
+R (glm, stepAIC, ResourceSelection, LogisticDx, pROC)
+
+Excel (for data input)
+
+bestglm, MASS, caret libraries
